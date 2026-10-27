@@ -1,11 +1,2 @@
-@import url(@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap'););
-
-
-body {
-    background-image: url("El\ texto\ del\ párrafo.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+@import url(@import url("https://fonts.googleapis.com/css2?family=Schoolbell&display=swap");
 
