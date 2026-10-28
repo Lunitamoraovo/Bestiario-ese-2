@@ -17,6 +17,15 @@ h2{
     font-size: 30px;
 
 }
+p {
+    color: black;
+    font-family: "Schoolbell", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 30px;
+
+}
 
 
 .generador {
@@ -74,7 +83,7 @@ h2{
 
 .cuadro button,
 .boton-general {
-    background-color: #D86C91;
+    background-color: #f8840f;
     color: white;
     border: 2px solid #49352B;
     border-radius: 8px;
