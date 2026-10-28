@@ -114,3 +114,89 @@ p {
         height: 300px;
     }
 }
+
+
+/* =================================
+   DISTRIBUCIÓN DE LOS DOS PANELES
+   ================================= */
+
+.zona-trabajo {
+    display: grid;
+    grid-template-columns: minmax(0, 6fr) minmax(150px, 1fr);
+    gap: 25px;
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 20px;
+    align-items: start;
+}
+
+.generador {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* El panel derecho */
+.personalizador {
+    background-color: #FFFDF8;
+    border: 2px solid #49352B;
+    border-radius: 14px;
+    padding: 20px;
+     margin-left: 20px;
+    margin-top: -20px;
+    box-shadow: 5px 5px 0 #D8BFA4;
+    text-align: center;
+    color: #49352B;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+.personalizador h2 {
+    font-size: 8px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.personalizador p {
+    font-size: 15px;
+}
+
+/* Los cinco cuadros verticales */
+.opciones-oc {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.opcion-oc {
+    background-color: #F8EDE3;
+    border: 1px solid #D8BFA4;
+    border-radius: 10px;
+    padding: 32px;
+    text-align: left;
+}
+
+.opcion-oc .etiqueta {
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.opcion-oc p {
+    margin: 8px 0 0;
+    font-size: 15px;
+}
+
+/* Adaptación para móviles */
+@media (max-width: 800px) {
+    .zona-trabajo {
+        grid-template-columns: 1fr;
+    }
+
+    .personalizador {
+        width: 100%;
+    }
+}

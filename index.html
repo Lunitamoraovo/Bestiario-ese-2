@@ -17,10 +17,16 @@
     <h1>Skecht Project</h1>
     <h2>¿Acaso tienes problemas para dibujar?</h2>
     <h2>¿No encuentras la inspiración suficiente para crear?</h2>
-
-    <section class="generador">
-        <h2>Combina tu personaje</h2>
+h2>Combina tu personaje</h2>
         <p>¡Mezcla las piezas y descubre nuevas poses!</p>
+
+    
+<div class="zona-trabajo">
+
+    <!-- GENERADOR DE POSES ORIGINAL -->
+    <section class="generador">
+        <h2>Combina tu criatura</h2>
+        <p>¡Mezcla piezas y descubre nuevas poses!</p>
 
         <div class="cuadros">
             <div class="cuadro">
@@ -28,7 +34,6 @@
                 <img id="imagenCabeza"
                      src="imagenes/poses/cabeza 1.png"
                      alt="Referencia de cabeza">
-                
             </div>
 
             <div class="cuadro">
@@ -36,7 +41,6 @@
                 <img id="imagenTorso"
                      src="imagenes/poses/torso 1.png"
                      alt="Referencia de torso">
-                
             </div>
 
             <div class="cuadro">
@@ -44,19 +48,54 @@
                 <img id="imagenPiernas"
                      src="imagenes/poses/piernas 1.png"
                      alt="Referencia de piernas">
-                
             </div>
         </div>
+
         <button class="boton-general" id="boton">
-            ¡Sorpréndeme! 
+            ¡Sorpréndeme!
         </button>
     </section>
 
-<script>
-    alert("¡El HTML está funcionando!");
-</script>
 
-<script src="script.js"></script>
+    <!-- NUEVO PANEL DE PERSONALIZACIÓN -->
+    <section class="personalizador" id="personalizador">
 
-</body>
-</html>
+        <h2>Crea tu OC</h2>
+        <p>¡Descubre quién será tu próximo personaje!</p>
+
+        <div class="opciones-oc">
+
+            <div class="opcion-oc">
+                <span class="etiqueta">01 · COLOR DE PIEL</span>
+                <p id="piel">Aún sin generar</p>
+            </div>
+
+            <div class="opcion-oc">
+                <span class="etiqueta">02 · TIPO DE CABELLO</span>
+                <p id="cabello">Aún sin generar</p>
+            </div>
+
+            <div class="opcion-oc">
+                <span class="etiqueta">03 · OJOS</span>
+                <p id="ojos">Aún sin generar</p>
+            </div>
+
+            <div class="opcion-oc">
+                <span class="etiqueta">04 · ACCESORIOS</span>
+                <p id="accesorios">Aún sin generar</p>
+            </div>
+
+            <div class="opcion-oc">
+                <span class="etiqueta">05 · RASGO ESPECIAL</span>
+                <p id="rasgo">Aún sin generar</p>
+            </div>
+
+        </div>
+
+        <button class="boton-general" id="botonOC">
+            ¡Crea tu OC!
+        </button>
+
+    </section>
+
+</div>

@@ -46,3 +46,95 @@ if (boton) {
 } else {
     console.error("No se encontró el botón en el HTML.");
 }
+
+
+
+/* =================================
+   GENERADOR ALEATORIO DE OC
+   ================================= */
+
+// Opciones para cada característica
+const coloresPiel = [
+    "Piel muy clara",
+    "Piel morena",
+    "Piel oscura",
+    "Piel azul",
+    "Piel verde",
+    "Piel morada",
+    "Piel rojiza",
+    "Piel gris"
+];
+
+const tiposCabello = [
+    "Cabello corto",
+    "Cabello largo",
+    "Cabello rizado",
+    "Cabello liso",
+    "Cabello ondulado",
+    "Cabello despeinado",
+    "Cabello en trenzas",
+    "Cabello en coleta"
+];
+
+const tiposOjos = [
+    "Ojos azules",
+    "Ojos verdes",
+    "Ojos dorados",
+    "Ojos rojos",
+    "Ojos violetas",
+    "Ojos completamente negros",
+    "Heterocromía",
+    "Ojos brillantes"
+];
+
+const listaAccesorios = [
+    "Gafas redondas",
+    "Pendientes largos",
+    "Un collar misterioso",
+    "Un sombrero",
+    "Una diadema",
+    "Un parche en el ojo",
+    "Varios piercings",
+    "Sin accesorios"
+];
+
+const rasgosEspeciales = [
+    "Cuernos pequeños",
+    "Alas",
+    "Una cola",
+    "Pecas",
+    "Cicatrices",
+    "Orejas puntiagudas",
+    "Marcas mágicas",
+    "Ninguno"
+];
+
+
+// Elegir una opción al azar
+function elegirOpcion(lista) {
+    return lista[Math.floor(Math.random() * lista.length)];
+}
+
+
+// Conectar el botón y los cuadros
+const botonOC = document.getElementById("botonOC");
+
+const cuadroPiel = document.getElementById("piel");
+const cuadroCabello = document.getElementById("cabello");
+const cuadroOjos = document.getElementById("ojos");
+const cuadroAccesorios = document.getElementById("accesorios");
+const cuadroRasgo = document.getElementById("rasgo");
+
+
+// Generar las cinco características
+function generarOC() {
+    cuadroPiel.textContent = elegirOpcion(coloresPiel);
+    cuadroCabello.textContent = elegirOpcion(tiposCabello);
+    cuadroOjos.textContent = elegirOpcion(tiposOjos);
+    cuadroAccesorios.textContent = elegirOpcion(listaAccesorios);
+    cuadroRasgo.textContent = elegirOpcion(rasgosEspeciales);
+}
+
+
+// Activar el generador de OC
+botonOC.addEventListener("click", generarOC);
