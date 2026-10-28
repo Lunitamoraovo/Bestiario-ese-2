@@ -18,6 +18,51 @@
     <h1>Skecht Project</h1>
     <h2> ¿Acaso tienes problemas para dibujar? </h2>
        <h2>¿No encuentras la inspiración suficiente para crear?</h2> 
+
+
+<section class="generador">
+    <h2>Combina tu criatura</h2>
+    <p>¡Mezcla piezas y descubre nuevas poses!</p>
+
+    <div class="cuadros">
+
+        <div class="cuadro">
+            <span class="etiqueta">01 · CABEZA</span>
+            <img id="imagenCabeza"
+                 src="cag"
+                 alt="Referencia de cabeza">
+            <button onclick="cambiarImagen('cabeza')">
+                Cambiar ↻
+            </button>
+        </div>
+
+        <div class="cuadro">
+            <span class="etiqueta">02 · TORSO</span>
+            <img id="imagenTorso"
+                 src="imagenes/poses/torso1.png"
+                 alt="Referencia de torso">
+            <button onclick="cambiarImagen('torso')">
+                Cambiar ↻
+            </button>
+        </div>
+
+        <div class="cuadro">
+            <span class="etiqueta">03 · PIERNAS</span>
+            <img id="imagenPiernas"
+                 src="imagenes/poses/piernas1.png"
+                 alt="Referencia de piernas">
+            <button onclick="cambiarImagen('piernas')">
+                Cambiar ↻
+            </button>
+        </div>
+
+    </div>
+
+    <button class="boton-general" onclick="generarTodo()">
+        ¡Sorpréndeme!
+    </button>
+</section>
+
    
 
 </body>
