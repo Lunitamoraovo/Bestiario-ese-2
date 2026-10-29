@@ -74,10 +74,11 @@ const tiposCabello = [
     "Cabello despeinado",
     "Cabello en trenzas",
     "Cabello en coleta"
+    "Sin pelo" 
 ];
 
 const tiposOjos = [
-    "Ojos azules",
+    "imagenes/poses/cabeza 1.png",
     "Ojos verdes",
     "Ojos dorados",
     "Ojos rojos",
@@ -85,10 +86,13 @@ const tiposOjos = [
     "Ojos completamente negros",
     "Heterocromía",
     "Ojos brillantes"
+    "Tres ojos"
+    "Multiples ojos"
 ];
 
 const listaAccesorios = [
     "Gafas redondas",
+    "Bufanda"
     "Pendientes largos",
     "Un collar misterioso",
     "Un sombrero",
@@ -102,6 +106,7 @@ const rasgosEspeciales = [
     "Cuernos pequeños",
     "Alas",
     "Una cola",
+    "Ninguno"
     "Pecas",
     "Cicatrices",
     "Orejas puntiagudas",
